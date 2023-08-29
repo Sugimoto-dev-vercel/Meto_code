@@ -1,0 +1,210 @@
+:root {
+    --main: #26403d;
+    --connect: green;
+    --maybe: #ecb051;
+    --archive: red;
+    --success: #198754;
+    --warning: #ffc107;
+    --secondary: #6c757d;
+}
+
+body {
+    font-size: 115%;
+    line-height: 1.4;
+    font-family: 'Proza Libre', sans-serif;
+    background-color: white;
+}
+
+/** Start of Utilities */
+.btn {
+    border-radius: 5px !important;
+}
+input[disabled] {
+    background: rgba(128, 128, 128, 0.15) !important;
+}
+input.form-control {
+    border-radius: 6px !important;
+}
+.pointer {
+    cursor: pointer;
+}
+.btn-green {
+    background: #1A8754 !important;
+}
+.btn-danger {
+    background: #DC3346 !important;
+    color: white !important;
+
+    &:hover {
+         background: #DC3346 !important;
+         border: 1px solid #DC3346 !important;
+         opacity: .9;
+    }
+}
+#students-tables {
+    input[type='radio'] {
+        appearance: none;
+        width: 0;
+        opacity: 0;
+    }
+    label {
+        cursor: pointer;
+    }
+}
+.btn-connect {
+    color: white;
+    background: var(--connect);
+    border-radius: 5px !important;
+}
+[target='connect'] {
+    border: 1px solid var(--connect) !important;
+    color: var(--connect) !important;
+    border-radius: 5px !important;
+}
+.btn-maybe {
+    color: white;
+    background: var(--maybe);
+    border-radius: 5px !important;
+}
+[target='maybe'] {
+    color: var(--maybe) !important;
+    border: 1px solid var(--maybe) !important;
+    &:hover {
+        color: white !important;
+        border: 1px solid var(--maybe) !important;
+        background: var(--maybe) !important;
+    }
+    border-radius: 5px !important;
+}
+.btn-archive {
+    color: white;
+    background: var(--archive);
+    border-radius: 5px !important;
+}
+[target='archive'] {
+    color: var(--archive) !important;
+    border: 1px solid var(--archive) !important;
+    &:hover {
+        color: white !important;
+        border: 1px solid var(--archive) !important;
+        background: var(--archive) !important;
+    }
+    border-radius: 5px !important;
+}
+label[selected_option="true"].connect {
+    .btn-connect();
+    color: white !important;
+}
+label[selected_option="true"].maybe {
+    .btn-maybe();
+    color: white !important;
+}
+label[selected_option="true"].archive {
+    .btn-archive();
+    color: white !important;
+}
+.bg-gray {
+    background: rgb(128 128 128 / 29%);
+}
+.btn-outline-danger:hover {
+    background: #DC3346 !important;
+    color: white !important;
+    border: 1px solid #DC3346 !important;
+}
+
+.btn-success {
+    &:hover {
+        background: var(--success) !important;
+        color: white !important;
+        border-color: var(--success) !important;
+    }
+}
+.btn-warning {
+    &:hover {
+        background: var(--warning) !important;
+        color: #000 !important;
+        border-color: var(--warning) !important;
+    }
+}
+.btn-secondary {
+    &:hover {
+        background: var(--secondary) !important;
+        color: white !important;
+        border-color: var(--secondary) !important;
+    }
+}
+
+.btn-outline-success {
+    &:hover {
+        background: var(--success) !important;
+        color: white !important;
+        border: 1px solid;
+        border-color: var(--success) !important;
+    }
+}
+.btn-outline-warning {
+    &:hover {
+        background: var(--warning) !important;
+        color: #000 !important;
+        border: 1px solid;
+        border-color: var(--warning) !important;
+    }
+}
+.btn-outline-secondary {
+    &:hover {
+        background: var(--secondary) !important;
+        color: white !important;
+        border: 1px solid;
+        border-color: var(--secondary) !important;
+    }
+}
+/** End of Utilities */
+
+
+.drp-buttons .applyBtn {
+    color: var(--main) !important;
+    border: 1px solid var(--main);
+    border-radius: 3px !important;
+
+    &:hover {
+        color: white !important;
+    }
+}
+.active.start-date {
+    background: var(--main) !important;
+}
+
+.power-grid-button {
+    color: #787878 !important;
+    background-color: #2125290f !important;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #787878 !important;
+}
+
+.single-student-card {
+    .close-btn {
+        cursor: pointer;
+    }
+    .student-country-flag {
+        height: 25px;
+        width: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 3px;
+    }
+    .detail {
+        margin-bottom: 10px;
+    }
+}
+
+label.error {
+    color: red;
+    font-size: 15px;
+    margin-top: 9px;
+}
+
+#emailModal .modal-dialog {
+    max-width: 60%;
+}
